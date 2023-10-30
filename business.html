@@ -1,0 +1,28 @@
+<link href="//db.onlinewebfonts.com/c/a4e256ed67403c6ad5d43937ed48a77b?family=Core+Sans+N+W01+35+Light" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="business.css" type="text/css">
+<div class="body-content">
+  <div class="module">
+    <h1>Create an Vendor account</h1>
+    <form method="POST" action="business.php">
+        <div class="alert alert-error"></div>
+      <input type="text" placeholder="User Name" name="username" required />
+      <input type="text" placeholder="Business name" name="business_name" required />
+      <input type="text" placeholder="Business owner" name="business_owner" required />
+      <input type="text" placeholder="Contact number" name="contact_number" required />
+      <input type="text" placeholder="Address" name="address" required />
+      <input type="email" placeholder="Email" name="email" required />
+      <input type="password" placeholder="Password" name="password" autocomplete="new-password" required />
+      <input type="password" placeholder="Confirm Password" name="confirmpassword" autocomplete="new-password" required />
+      <label for="type_of_business">Type of business</label>
+      <select name="business_type" id="type_of_business" required>
+        <option value="" disabled selected>Select type of business</option>
+        <option value="shop/cafe">Shop/Cafe</option>
+        <option value="lending">Lending</option>
+        <option value="store">Store</option>
+        <option value="rentals">Rentals</option>
+        <option value="others">Others</option>
+      </select>
+      <input type="submit" value="Register" name="register" class="btn btn-block btn-primary" />
+    </form>
+  </div>
+</div>
