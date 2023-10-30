@@ -1,0 +1,103 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.review-form, .review-list {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.review-form h2, .review-list h2 {
+    color: #333;
+    text-align: center;
+}
+
+.form-group {
+    padding: 10px ;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.review-list .review {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-list .review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review-rating {
+    font-size: 18px;
+    color: #FFD700; /* Gold color for stars */
+}
+
+.review-text {
+    margin-top: 10px;
+    color: #444;
+}
+
+/* Styling for stars */
+.review-rating::before {
+    content: "★★★★★";
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+
+/* Apply colors to the stars based on the rating */
+.review-rating[data-rating="1"]::before { color: #FF0000; }
+.review-rating[data-rating="2"]::before { color: #FF4500; }
+.review-rating[data-rating="3"]::before { color: #FFD700; }
+.review-rating[data-rating="4"]::before { color: #ADFF2F; }
+.review-rating[data-rating="5"]::before { color: #32CD32; }
